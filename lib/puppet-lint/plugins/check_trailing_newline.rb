@@ -2,7 +2,13 @@ PuppetLint.new_check(:trailing_newline) do
   def check
     last_token = tokens.last
 
-    unless last_token.type == :NEWLINE
+    if tokens.empty?
+      notify :warning, {
+        :message => 'expected newline at the end of the file',
+        :line    => 0,
+        :column  => 0,
+      }
+    elsif last_token.type != :NEWLINE
       notify :warning, {
         :message => 'expected newline at the end of the file',
         :line    => last_token.line,
