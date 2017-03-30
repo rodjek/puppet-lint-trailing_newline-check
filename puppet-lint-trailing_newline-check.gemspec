@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-trailing_newline-check'
-  spec.version     = '1.0.0'
+  spec.version     = '1.0.1'
   spec.homepage    = 'https://github.com/rodjek/puppet-lint-trailing_newline-check'
   spec.license     = 'MIT'
   spec.author      = 'Tim Sharpe'
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     Extends puppet-lint to ensure that your manifest files end with newlines.
   EOF
 
-  spec.add_dependency             'puppet-lint', '~> 1.0'
+  spec.add_dependency             'puppet-lint', '>= 1.0', '< 3.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rspec-its', '~> 1.0'
   spec.add_development_dependency 'rspec-collection_matchers', '~> 1.0'
