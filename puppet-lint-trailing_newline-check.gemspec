@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-trailing_newline-check'
-  spec.version     = '1.0.1'
+  spec.version     = '1.1.0'
   spec.homepage    = 'https://github.com/rodjek/puppet-lint-trailing_newline-check'
   spec.license     = 'MIT'
   spec.author      = 'Tim Sharpe'
